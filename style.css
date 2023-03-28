@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #dfe7ff;
+    background: linear-gradient(to bottom, #cfd9f8, #dfe7ff);
 }
 
 .calculator {
@@ -21,7 +21,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     gap: 10px;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -66,14 +66,13 @@ body {
 #reset,
 #delete {
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
     background-color: #dfe7ff;
     color: #8080ff;
-    font-weight: bold;
 }
 
 #reset:hover,
