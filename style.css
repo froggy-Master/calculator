@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fbefe9;
+    background-color: #dfe7ff;
 }
 
 .calculator {
@@ -23,15 +23,36 @@ body {
     flex-direction: column;
     padding: 10px;
     gap: 10px;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .screen {
-    background-color: #9d8189;
+    background-color: #5a70b3;
     height: 170px;
     flex: 2;
-    border-radius: 4px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.top-row,
+.bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.top-row {
+    flex: 1;
+    font-size: 26px;
+}
+
+.bottom-row {
+    flex: 1.5;
+    font-size: 46px;
 }
 
 .delete-and-reset {
@@ -44,23 +65,28 @@ body {
 
 #reset,
 #delete {
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    background-color: #ffe5d9;
-    color: #2a2728;
+    background-color: #dfe7ff;
+    color: #8080ff;
     font-weight: bold;
 }
 
 #reset:hover,
 #delete:hover {
-    background-color: #ffcad4;
+    background-color: #8080ff;
+    color: #fff;
     transform: scale(0.95);
 }
 
+#reset:active,
+#delete:active {
+    transform: scale(0.92);
+}
 
 .keypad {
     width: 100%;
@@ -77,27 +103,22 @@ body {
 }
 
 .key {
-    background-color: #ffe5d9;
-    color: #2a2728;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 4px;
+    background-color: #8080ff;
+    color: #fff;
+    font-size: 36px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
 }
 
-.num:hover {
+.key:hover {
     transform: scale(0.95);
-    background-color: #ffb4a2;
+    background-color: #dfe7ff;
+    color: #8080ff;
 }
 
-.operator:hover {
-    transform: scale(0.95);
-    background-color: #fff3b0;
-}
-
-#operatorEquals:hover {
-    background-color: #d8e2dc;
+.key:active {
+    transform: scale(0.92);
 }
