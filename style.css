@@ -55,7 +55,7 @@ body {
     font-size: 46px;
 }
 
-.delete-and-reset {
+.delete-and-clear {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -63,7 +63,7 @@ body {
     flex: 1;
 }
 
-#reset,
+#clear,
 #delete {
     border-radius: 20px;
     font-size: 24px;
@@ -75,14 +75,14 @@ body {
     color: #8080ff;
 }
 
-#reset:hover,
+#clear:hover,
 #delete:hover {
     background-color: #8080ff;
     color: #fff;
     transform: scale(0.95);
 }
 
-#reset:active,
+#clear:active,
 #delete:active {
     transform: scale(0.92);
 }
